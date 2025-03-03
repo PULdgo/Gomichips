@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michepapas & Gomitas - Sabor y Diversión</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #fff5e1;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(45deg, #ff5722, #ff9800);
+            padding: 20px 50px;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        .logo img {
+            max-width: 120px;
+        }
+        .slogan {
+            font-size: 1.8em;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        .hero {
+            background: url('fondo-hero.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            font-size: 1.3em;
+            font-weight: 400;
+        }
+        .btn {
+            background: #ff5722;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #d84315;
+        }
+        .redes-sociales {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .redes-sociales a {
+            margin: 0 10px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        .redes-sociales img {
+            width: 50px;
+            transition: 0.3s;
+        }
+        .redes-sociales a:hover img {
+            transform: scale(1.1);
+        }
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .productos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .producto {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            transition: 0.3s;
+        }
+        .producto:hover {
+            transform: scale(1.05);
+        }
+        .producto img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .video {
+            text-align: center;
+            margin: 30px 0;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logotipo de la empresa">
+        </div>
+        <h1 class="slogan">"Sabor extremo en cada bocado"</h1>
+    </header>
+
+    <section class="hero">
+        <h2>Las mejores michepapas y gomitas enchiladas</h2>
+        <p>Disfruta de nuestros productos con el toque perfecto de sabor, picante y diversión.</p>
+        <a href="#productos" class="btn">Ver productos</a>
+    </section>
+
+    <section class="redes-sociales">
+        <h2>Síguenos en nuestras redes</h2>
+        <a href="https://facebook.com" target="_blank">
+            <img src="facebook.png" alt="Facebook">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="instagram.png" alt="Instagram">
+        </a>
+        <a href="https://tiktok.com" target="_blank">
+            <img src="tiktok.png" alt="TikTok">
+        </a>
+    </section>
+
+    <section class="content" id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="michepapas.jpg" alt="Michepapas">
+                <h3>Michepapas</h3>
+                <p>Papas crujientes con nuestra receta especial de chamoy y chilito.</p>
+            </div>
+            <div class="producto">
+                <img src="gomitas.jpg" alt="Gomitas enchiladas">
+                <h3>Gomitas Enchiladas</h3>
+                <p>Las gomitas más adictivas con nuestro toque picante y acidito.</p>
+            </div>
+            <div class="producto">
+                <img src="mix.jpg" alt="Mix de snacks">
+                <h3>Mix de Snacks</h3>
+                <p>Una combinación explosiva de michepapas, gomitas y más.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="video">
+        <h2>Conócenos en acción</h2>
+        <video width="80%" controls>
+            <source src="video.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Michepapas & Gomitas. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
